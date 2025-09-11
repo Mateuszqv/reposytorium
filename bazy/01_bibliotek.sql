@@ -27,3 +27,56 @@ SELECT * FROM ksiazka;
 ALTER TABLE ksiazka
 ADD id int PRIMARY KEY 
 AUTO_INCREMENT;
+
+
+
+
+CREATE TABLE gatunki(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nazwa varchar(100)
+);
+
+ALTER TABLE ksiazka 
+ADD gatunek INT
+
+INSERT INTO gatunki
+(nazwa)
+VALUES
+('dramat'),
+('Komedia');
+
+INSERT INTO ksiazka 
+(tytul, autor, gatunek)
+VALUES
+('Harry Potter', 'J.K Rowling', 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2222222222222222222222222
+
+
+CREATE DATABASE 4e_wizyty;
+USE 4e_wizyty;
+
+CREATE TABLE 4e_wizyty(
+    imie varchar(200),
+    nazwisko varchar(200),
+    telefon varchar(200),
+    data date,
+    typ varchar(200)
+);
+
+INSERT INTO 4e_wizyty
+VALUES 
+('Jan', 'Kowalski', '123456789', '2000-12-9', 'leczenie');
