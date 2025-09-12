@@ -80,3 +80,24 @@ CREATE TABLE 4e_wizyty(
 INSERT INTO 4e_wizyty
 VALUES 
 ('Jan', 'Kowalski', '123456789', '2000-12-9', 'leczenie');
+
+INSERT INTO 4e_wizyty
+VALUES 
+('Jan', 'Kowalski', '123456789', '2000-12-10', 'Proflaktyka');
+
+INSERT INTO 4e_wizyty
+VALUES 
+('Paweł', 'Kowalczyk', '987654321', '2000-12-20', 'Kontrola');
+
+ALTER TABLE 4e_wizyty 
+ADD id int PRIMARY KEY
+AUTO_INCREMENT first;
+
+
+DELETE FROM 4e_wizyty 
+WHERE id = 3;
+
+
+INSERT INTO 4e_wizyty
+VALUES 
+('Jan', 'Kowalski', '123456789', '2000-12-10', 'Proflaktyka');
